@@ -12,7 +12,7 @@ const WhoWeAre = () => {
   const subHead2 = SplitString("Management & Support");
   const subHead3 = SplitString("Services.");
   const text = SplitString(
-    "Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software development needs."
+    "Since 2012, We are responsible for delivering top quality, Secure and adaptable tailor made digital solutions services for your business solution needs"
   );
 
   const [showDiv, setShowDiv] = useState(false);
@@ -128,15 +128,15 @@ const WhoWeAre = () => {
               transition={{ duration: 1}}
             >
               <div className="inner-div-child-left">
-                <div className="who-we-are-left-sign">
+                <div className="who-we-are-left-sign" >
                   <img src={sign} alt="sig" className="sign-img" />
                 </div>
-                <div className="who-we-are-left-name">Lorem Bhau</div>
-                <div className="who-we-are-left-desig">CEO, Somewhere</div>
+                <div className="who-we-are-left-name">Pankaj Katkar</div>
+                <div className="who-we-are-left-desig">CEO, Mumbai</div>
               </div>
               <div className="inner-div-child-right">
                 <div className="who-we-are-text">Call to ask any question</div>
-                <div className="who-we-are-num">+91 0987654321</div>
+                <div className="who-we-are-num">+91 9082582243</div>
               </div>
             </motion.div>
           </motion.div>

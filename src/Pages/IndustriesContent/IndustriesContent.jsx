@@ -38,10 +38,13 @@ const IndustriesContent = () => {
               <div className="industries-heading">{key.heading}</div>
               <hr />
               <span className="text-span">{key.text}</span>
+              {key.text2 ? (
+                <span className="text-span">{key.text2}</span>
+              ) : null}
             </div>
             <div className="inner-right">
               <img src={`${key.image}`} alt="" />
-              </div>
+            </div>
           </div>
         );
       })}

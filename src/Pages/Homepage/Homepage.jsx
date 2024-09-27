@@ -19,7 +19,7 @@ const Homepage = () => {
       <OurServices />
       <WhoWeAre />
       <WhyChooseUs />
-      <OurClients />
+      {/* <OurClients /> */}
       <Footer />
       <StickyContactForMobile />
     </motion.div>

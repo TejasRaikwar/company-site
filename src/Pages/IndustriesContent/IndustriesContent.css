@@ -21,15 +21,15 @@
   padding: 1rem;
 }
 .industries-heading{
-  font-size: 28px;
+  font-size: 33px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 .text-span {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 10px;
-  /* margin-left: 0.7rem; */
   line-height: 1.5rem;
+  font-weight: 400;
 }
 .div {
   height: 30rem;

@@ -13,37 +13,37 @@ export const WhyChooseUsData = [
     {
         id: 1,
         icon: <FaChartLine size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Meet Your Revenue Goal",
-        description:"Real business results for companies with the goal of growing revenue"
+        heading:"Customized Business Solutions",
+        description:"Tailored services to meet your unique business needs for seamless integration and growth."
     },
     {
         id: 2,
         icon: <Ri24HoursFill  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Less Than 24 Hours Guaranteed Response",
-        description:"Professionals known for fastest turnaround time"
+        heading:"Expert Development Services",
+        description:"Our experienced team delivers innovative, precision-driven solutions for your business."
     },
     {
         id: 3,
         icon: <TbCertificate  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"ISO 9001:2015 Certified",
-        description:"Customer Satisfaction is our top priority"
+        heading:"Efficient Collaboration Tools",
+        description:"Boost productivity with solutions designed to enhance teamwork and streamline processes."
     },
     {
         id: 4,
         icon: <FaRegHandshake   size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"We Listen, We Learn, Understand, Then Build",
-        description:"Designs & develops experiences that help you innovate and grow"
+        heading:"Streamlined Document Management",
+        description:"Manage documents efficiently with secure, accessible, and optimized workflows."
     },
     {
         id: 5,
         icon: <GoLaw  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Dedicated Client Advocacy",
-        description:"Special Team to focus on customers' success"
+        heading:"Cutting-Edge Technology",
+        description:"Empowering businesses with scalable, secure solutions to stay ahead in any industry."
     },
     {
         id: 6,
         icon: <GiPlayerTime  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Handle Tight Deadlines",
-        description:"We are known to meet short notice deadlines"
+        heading:"Seamless System Integration",
+        description:"Integrate systems effortlessly for enhanced efficiency and reduced operational costs."
     },
 ]

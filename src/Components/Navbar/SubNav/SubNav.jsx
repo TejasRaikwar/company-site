@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./SubNav.css";
+
 import {
   AiFillSetting,
   AiFillCloud,
   AiOutlineMobile,
   AiOutlineDesktop,
-  AiOutlinePlus,
   AiOutlineMinus,
+  AiOutlinePlus
 } from "react-icons/ai";
+import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
+import { DiDotnet } from "react-icons/di";
 import { FaHandshake } from "react-icons/fa";
 import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { IoEarthOutline } from "react-icons/io5";
 import { GiArtificialIntelligence } from "react-icons/gi";
+
 import AboutUs from "../AboutUS/AboutUs";
 import Industries from "../Industries/Industries";
 import Technologies from "../Technologies/Technologies";
@@ -55,21 +59,37 @@ const SubNav = ({toggleNavbar}) => {
                         style={{ marginRight: "10px" }}
                         onClick={toggleNavbar}
                       />
-                      Software Development
+                      SharePoint Development
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="services/ecommerce-solutions"
+                      to="services/software-development"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
                     >
-                      <BsCart4
+                      <DiDotnet
                         size={20}
+                        color="blue"
                         style={{ marginRight: "10px" }}
-                        color="green"
+                        onClick={toggleNavbar}
                       />
-                      eCommerce Solutions
+                      .Net
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="services/software-development"
+                      style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
+                    >
+                      <SiPowerapps
+                        size={20}
+                        color="#872c81"
+                        style={{ marginRight: "10px" }}
+                        onClick={toggleNavbar}
+                      />
+                      Power Platform
                     </Link>
                   </li>
                   <li>
@@ -125,34 +145,6 @@ const SubNav = ({toggleNavbar}) => {
                   </li>
                   <li>
                     <Link
-                      to="services/crm-solutions"
-                      style={{ alignItems: "center", display: "flex" }}
-                      onClick={toggleNavbar}
-                    >
-                      <FaHandshake
-                        size={20}
-                        style={{ marginRight: "10px" }}
-                        color="#1a6ad9"
-                      />
-                      CRM Solutions
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="services/web-design"
-                      style={{ alignItems: "center", display: "flex" }}
-                      onClick={toggleNavbar}
-                    >
-                      <IoEarthOutline
-                        size={20}
-                        style={{ marginRight: "10px" }}
-                        color="red"
-                      />
-                      Web Design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       to="services/hire-developer"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
@@ -175,7 +167,7 @@ const SubNav = ({toggleNavbar}) => {
                         size={20}
                         style={{ marginRight: "10px" }}
                       />
-                      AI/ML
+                      Artificial intelligence
                     </Link>
                   </li>
                 </ul>

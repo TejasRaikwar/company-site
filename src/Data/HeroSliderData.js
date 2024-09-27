@@ -19,7 +19,7 @@ export const heroSliderData = [
     logo: <img src={AILogo} height={iconSize} alt="" />,
     heading: (
       <div className="sd-text">
-        Artificial Intelligence <br />& Machine Learning
+        Artificial Intelligence <br />
       </div>
     ),
   },
@@ -39,15 +39,5 @@ export const heroSliderData = [
       </div>
     ),
     text: "Think Big, Think Different with our Mobile Solutions",
-  },
-  {
-    logo: <img src={ecomLogo} height={iconSize} alt="" />,
-    heading: (
-      <div className="sd-text">
-        E-Commerce Is Way More <br />
-        Than Online Shopping
-      </div>
-    ),
-    text: "Transformation Solutions to grow your E-Commerce Business",
   },
 ];

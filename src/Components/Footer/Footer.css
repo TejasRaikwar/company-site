@@ -5,14 +5,14 @@
 }
 .footer-inner-container {
   display: flex;
-  padding: 1rem;
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 .footer-left-container {
-  width: 50%;
+  width: 60%;
 }
 .footer-right-container {
-  width: 50%;
+  width: 40%;
 }
 .footer-right-container iframe {
   border-radius: 8px;
@@ -22,7 +22,7 @@
   padding-top: 1em;
 }
 .footer-logo-div {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 @media screen and (max-width: 576px) {
   .footer-inner-container {

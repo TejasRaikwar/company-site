@@ -272,7 +272,7 @@ const ServicesContent = () => {
             {/* why choose us */}
             <div className="whychooseus-container" ref={whyUSRef}>
               <div className="whychooseus-subcontainer">
-                <h4 className="service-page-heading pt">WHY US ?</h4>
+                <h4 className="service-page-heading pt">Why us ?</h4>
                 <div className="whychooseus-rsn-blocks">
                   {whyus.map((key, index) => {
                     return (

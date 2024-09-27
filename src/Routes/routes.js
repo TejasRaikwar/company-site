@@ -151,6 +151,128 @@ const iconColor = "rgb(84,84,84)";
 const routesConfig = {
   services: [
     {
+      path: "services/sharepoint-development",
+      content: {
+        heading: "Sharepoint Development Services",
+        heroImageLink: "/backgrounds/services/software-development.jpg",
+        headPoints: [
+          "Software Solution and Service Provider for over Two Decades.",
+          "Team of Highly Experienced Software Developers on all latest technologies.",
+          "Software Solutions for all Industry Verticals.",
+          "Software Development using Agile and Waterfall.",
+          "Dedicated Project Managers and Account Manager.",
+          "We deliver the source code to let you have complete control.",
+          "24 Hours query responses guaranteed.",
+        ],
+        quote: {
+          quote:
+            "Software is a great combination between artistry and engineering.",
+          quoter: "- Bill Gates",
+        },
+        whyUs: [
+          {
+            icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
+            heading: "Solutions",
+            reason:
+              "We have been providing cutting-edge and customized software solutions since our founding in 2000. We have assisted 13000+ clients across the globe in streamlining their operations through our expert software product development services.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Knowledge and Expertise ",
+            reason:
+              "Our team has extensive knowledge of various industries, allowing us to create industry-specific software applications that bring significant value to your organization.",
+          },
+          {
+            icon: (
+              <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
+            ),
+            heading: "Customized Solutions ",
+            reason:
+              "We specialize in developing custom software solutions for businesses of all sizes. Our team is comprised of experienced programmers who are known for their outstanding consulting services and for writing clean code.",
+          },
+          {
+            icon: <FaProjectDiagram size={iconSize} color={iconColor} />,
+            heading: "Proactive Approach ",
+            reason:
+              "We understand your requirement first and then provide you best solution to achieve your unique business idea.",
+          },
+          {
+            icon: <GrUserExpert size={iconSize} color={iconColor} />,
+            heading: "Experienced Team",
+            reason:
+              "Our team of developers are highly experienced in latest technologies and can help you achieve the maximum scalability by developing solution as per the latest industry standards and relevance.",
+          },
+          {
+            icon: <Ri24HoursFill size={iconSize} color={iconColor} />,
+            heading: "24/7 Support ",
+            reason:
+              "Our team is always known for its availability and great customer support. Our team of highly professional developers is always available 24/7 to promptly address any queries.",
+          },
+        ],
+        Technologies: [
+          <img src={img1} alt="" />,
+          <img src={img2} alt="" />,
+          <img src={img3} alt="" />,
+          <img src={img4} alt="" />,
+          <img src={img5} alt="" />,
+          <img src={img6} alt="" />,
+          <img src={img7} alt="" />,
+          <img src={img8} alt="" />,
+          <img src={img9} alt="" />,
+          <img src={img10} alt="" />,
+          <img src={img11} alt="" />,
+          <img src={img12} alt="" />,
+          <img src={img13} alt="" />,
+          <img src={img14} alt="" />,
+          <img src={img15} alt="" />,
+          <img src={img16} alt="" />,
+          <img src={img17} alt="" />,
+          <img src={img18} alt="" />,
+        ],
+        whatWeDo: [
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Software Development",
+            text: "We develop software solutions across all services as listed below-",
+            points: [
+              "Website development services",
+              "Mobile apps development services",
+              "eCommerce solutions",
+              "Web design",
+              "CMS & CRM solutions",
+              "Cloud solutions",
+              "System Architecture",
+            ],
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Software Development Life Cycle",
+            text: "We follow the latest industry standard practice of software development to achieve the goal by mitigating project risks and optimizing overall project cost.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Development Approach",
+            text: "We follow Software Development methodology like Agile/Waterfall as per the project suitability to deliver the best solution in timebound and cost- effective manner.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "DevOps and (CI/CD)",
+            text: "CI/CD enables to automate the software delivery pipeline, allowing for faster and more reliable software releases. This approach reduces the likelihood of errors, improves collaboration between us and client, and helps deliver value to customers more quickly.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "Developers",
+            text: "We have highly experienced team of developers across latest technologies to provide best development solutions on Hourly, Man-Month and fixed cost basis. We have delivered software development solutions in e-commerce, website development, mobile applications, SharePoint, CMS & CRM, to name few.",
+          },
+          {
+            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
+            heading: "User Experience (UX) Design",
+            text: "With our intuitive User Experience (UX) design we focus on enhancing the overall satisfaction and usability of a software product by ensuring a seamless and enjoyable interaction between the user and the application.",
+          },
+        ],
+      },
+    },
+    {
       path: "services/software-development",
       content: {
         heading: "Software Development Services",
@@ -1324,15 +1446,67 @@ const routesConfig = {
     },
     {
       path: "industries/education",
-      content: "education",
+      content: {
+        divs: [
+          {
+            image: "/backgrounds/industries/edu_1.png",
+            heading: "Education Mobile App and Software Development Company",
+            text: "The number of healthcare applications also keeps expanding along with the mobile sector. Numerous health organizations appeal to us for the development of medical applications for mobile devices as a result of the popularity of reference apps, care planning apps, prescription reminder apps, and facility management solutions on app stores. We have a lot of expertise in developing apps of different levels of complexity and addressing problems. Healthcare mobile app development is important and challenging, and We will offer our services to you.",
+          },
+          {
+            image: "/backgrounds/industries/Edtech-iso.webp",
+            heading: "Education Software Development Company",
+            text: "We specialises in creating innovative software solutions for the education sector. We provide comprehensive software development services. Our expertise lies in crafting groundbreaking e-learning and education software solutions to meet your needs. We leverage our expertise in technology, instructional design, and user experience to develop e-learning platforms, educational apps, learning management systems, and more.",
+            text2:
+              "We collaborate with educational institutions, publishers, and edtech startups to deliver customized and scalable software solutions that enhance learning experiences, streamline administrative tasks, and improve student engagement. We understand that education software development companies play a crucial role in shaping the future of education by harnessing the power of software and digital tools. With a focus on leveraging the latest technologies and industry best practices, our team plays a crucial role in shaping the future of education by harnessing the power of software and digital tools.",
+          },
+        ],
+        ourSolutions: {
+          heading:
+            "Our E-learning and Education Software Development Solutions",
+          subHeading:
+            "Get innovative eLearning web and software solutions. development services Education software development We have developed expertise in creating innovative software solutions for the education sector.",
+          points: [
+            {
+              icon: "",
+              heading: "",
+              text: "",
+            },
+          ],
+        },
+      },
     },
     {
       path: "industries/banking-and-finance",
-      content: "banking and finance",
+      content: {
+        divs: [
+          {
+            image:
+              "/backgrounds/industries/Finance-Banking-Software-Development_Main_Banner.png",
+            heading: "Banking and Finance Software Development Company",
+            text: "As a leading finance marketing agency and software development company, we specialize in crafting innovative solutions that empower financial institutions, fintech startups, and banking enterprises to thrive in the digital age. Our finance software development company includes experienced developers, financial experts, and technology enthusiasts dedicated to revolutionizing the financial landscape.",
+          },
+        ],
+      },
     },
     {
       path: "industries/media-and-entertainment",
-      content: "media and entertainment",
+      content: {
+        divs: [
+          {
+            image:
+              "/backgrounds/industries/Finance-Banking-Software-Development_Main_Banner.png",
+            heading: "Media & Entertainment Software Development Company",
+            text: "We at ISRI Technologies shape the future of media and entertainment. As a premier media software development company in the industry, we are dedicated to empowering businesses. As a profound entertainment website developer, we craft innovative solutions that elevate user experiences and drive digital transformation.",
+          },
+          {
+            image:
+              "/backgrounds/industries/Finance-Banking-Software-Development_Main_Banner.png",
+            heading: "Media and Entertainment Software Solutions",
+            text: "We produce versatile, on-demand, and robust software solutions as an entertainment software development business to help you make the most of your digital strategy. This would include systems such as digital asset management, OTT (Over-The-Top) streaming, and others that would allow content producers and distributors to create connected experiences across numerous touchpoints. We can help you optimize media operations and personalize content with powerful analytics, whether you are a local ad agency or a worldwide DOOH (Digital Out of Home) service provider.",
+          },
+        ],
+      },
     },
     {
       path: "industries/retial-and-wholesale",

@@ -5,10 +5,13 @@ import {
   AiOutlineMobile,
   AiOutlineDesktop,
 } from "react-icons/ai";
+import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
+import { DiDotnet } from "react-icons/di";
 import { FaHandshake } from "react-icons/fa";
 import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { IoEarthOutline } from "react-icons/io5";
 import { GiArtificialIntelligence } from "react-icons/gi";
+
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -28,28 +31,41 @@ const Services = () => {
           <ul className="services-links-items">
             <li>
               <Link
-                to="services/software-development"
+                to="services/sharepoint-development"
                 style={{ alignItems: "center", display: "flex" }}
               >
-                <AiFillSetting
+                <SiMicrosoftsharepoint
                   size={20}
                   style={{ marginRight: "10px" }}
-                  color="orange"
+                  color="#046a70"
                 />
-                Software Development
+                SharePoint Development
               </Link>
             </li>
             <li>
               <Link
-                to="services/ecommerce-solutions"
+                to="services/software-development"
                 style={{ alignItems: "center", display: "flex" }}
               >
-                <BsCart4
+                <DiDotnet
                   size={20}
                   style={{ marginRight: "10px" }}
-                  color="green"
+                  color="blue"
                 />
-                eCommerce Solutions
+                .Net
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="services/software-development"
+                style={{ alignItems: "center", display: "flex" }}
+              >
+                <SiPowerapps
+                  size={20}
+                  style={{ marginRight: "10px" }}
+                  color="#872c81"
+                />
+                Power Platform
               </Link>
             </li>
             <li>
@@ -76,50 +92,11 @@ const Services = () => {
             </li>
             <li>
               <Link
-                to="services/website-development"
-                style={{ alignItems: "center", display: "flex" }}
-              >
-                <AiOutlineDesktop
-                  size={20}
-                  style={{ marginRight: "10px" }}
-                  color="blue"
-                />
-                Website Development
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="services/cms-solutions"
                 style={{ alignItems: "center", display: "flex" }}
               >
                 <BsLaptop size={20} style={{ marginRight: "10px" }} />
                 CMS Solutions
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="services/crm-solutions"
-                style={{ alignItems: "center", display: "flex" }}
-              >
-                <FaHandshake
-                  size={20}
-                  style={{ marginRight: "10px" }}
-                  color="#1a6ad9"
-                />
-                CRM Solutions
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="services/web-design"
-                style={{ alignItems: "center", display: "flex" }}
-              >
-                <IoEarthOutline
-                  size={20}
-                  style={{ marginRight: "10px" }}
-                  color="red"
-                />
-                Web Design
               </Link>
             </li>
             <li>
@@ -144,7 +121,7 @@ const Services = () => {
                   size={20}
                   style={{ marginRight: "10px" }}
                 />
-                AI/ML
+                Artificial intelligence
               </Link>
             </li>
           </ul>
