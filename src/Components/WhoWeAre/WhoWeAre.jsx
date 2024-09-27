@@ -139,7 +139,7 @@ const WhoWeAre = () => {
                 <div className="who-we-are-num">+91 9082582243</div>
               </div>
             </motion.div>
-          </motion.div>
+          </motion.div> 
           <motion.div
             className="whoweare-container-right"
             variants={slideVarients}
