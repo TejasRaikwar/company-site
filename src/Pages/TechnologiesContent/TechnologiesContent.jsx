@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./TechnologiesContent.css";
 import { motion } from "framer-motion";
 import routesConfig from "../../Routes/routes";

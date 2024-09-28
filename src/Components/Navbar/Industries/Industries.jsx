@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Industries = ({ toggleNavbar }) => {
   const { width } = useWindowDimensions();
-  if (width >= 1090) {
+  if (width >= 830) {
     return (
       <div className="dropdown">
         <div className="dropdown-lvl-1 right-space">

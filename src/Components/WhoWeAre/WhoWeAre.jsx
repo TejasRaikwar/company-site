@@ -125,21 +125,20 @@ const WhoWeAre = () => {
               variants={fadeInVariant}
               initial="initial"
               animate={slideDownControl}
-              transition={{ duration: 1}}
+              transition={{ duration: 1 }}
             >
               <div className="inner-div-child-left">
-                <div className="who-we-are-left-sign" >
-                  <img src={sign} alt="sig" className="sign-img" />
+                <div>
+                  <div className="who-we-are-left-name">Pankaj Katkar</div>
+                  <div className="who-we-are-left-desig">CEO, Mumbai</div>
                 </div>
-                <div className="who-we-are-left-name">Pankaj Katkar</div>
-                <div className="who-we-are-left-desig">CEO, Mumbai</div>
               </div>
               <div className="inner-div-child-right">
                 <div className="who-we-are-text">Call to ask any question</div>
                 <div className="who-we-are-num">+91 9082582243</div>
               </div>
             </motion.div>
-          </motion.div> 
+          </motion.div>
           <motion.div
             className="whoweare-container-right"
             variants={slideVarients}

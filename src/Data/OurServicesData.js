@@ -1,11 +1,8 @@
-import { AiOutlineCloud } from "react-icons/ai";
 import { CgWebsite } from "react-icons/cg";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { FaMobileAlt } from "react-icons/fa";
 import { MdOutlineSettingsApplications } from "react-icons/md";
 import { FiShoppingCart } from "react-icons/fi";
-import { BiBookContent } from "react-icons/bi";
-import { BsPeople } from "react-icons/bs";
 
 // const clr = "#07597F"
 const clr = "#800000"
@@ -21,7 +18,7 @@ export const OurservicesData = [
   {
     id:2,
     icon: <GiArtificialIntelligence  size={size} color={clr}  />,
-    title: ".Net",
+    title: ".Net Development",
     text: "NET is a versatile, open-source, cross-platform development platform created by Microsoft, enabling organizations to build and deploy a wide range of applications, from enterprise-level web services and cloud solutions to mobile apps and desktop software..",
   },
   {

@@ -21,7 +21,7 @@ const Homepage = () => {
       <WhyChooseUs />
       {/* <OurClients /> */}
       <Footer />
-      <StickyContactForMobile />
+      {/* <StickyContactForMobile /> */}
     </motion.div>
   );
 };

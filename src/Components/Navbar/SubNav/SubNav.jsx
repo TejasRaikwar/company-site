@@ -2,20 +2,17 @@ import React, { useState } from "react";
 import "./SubNav.css";
 
 import {
-  AiFillSetting,
   AiFillCloud,
   AiOutlineMobile,
   AiOutlineDesktop,
   AiOutlineMinus,
   AiOutlinePlus
 } from "react-icons/ai";
+import { TbBrandOffice } from "react-icons/tb";
 import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
-import { FaHandshake } from "react-icons/fa";
-import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
-import { IoEarthOutline } from "react-icons/io5";
+import { BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { GiArtificialIntelligence } from "react-icons/gi";
-
 import AboutUs from "../AboutUS/AboutUs";
 import Industries from "../Industries/Industries";
 import Technologies from "../Technologies/Technologies";
@@ -49,13 +46,13 @@ const SubNav = ({toggleNavbar}) => {
                 <ul className="services-dropdown-links-items">
                   <li>
                     <Link
-                      to="services/software-development"
+                      to="services/sharepoint-development"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
                     >
-                      <AiFillSetting
+                      <SiMicrosoftsharepoint
                         size={20}
-                        color="orange"
+                        color="#046a70"
                         style={{ marginRight: "10px" }}
                         onClick={toggleNavbar}
                       />
@@ -64,7 +61,22 @@ const SubNav = ({toggleNavbar}) => {
                   </li>
                   <li>
                     <Link
-                      to="services/software-development"
+                      to="services/office365"
+                      style={{ alignItems: "center", display: "flex" }}
+                      onClick={toggleNavbar}
+                    >
+                      <TbBrandOffice
+                        size={20}
+                        color="red"
+                        style={{ marginRight: "10px" }}
+                        onClick={toggleNavbar}
+                      />
+                      SharePoint Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="services/dotnet-development"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
                     >
@@ -74,12 +86,12 @@ const SubNav = ({toggleNavbar}) => {
                         style={{ marginRight: "10px" }}
                         onClick={toggleNavbar}
                       />
-                      .Net
+                      .Net Development
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="services/software-development"
+                      to="services/power-platform"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
                     >
@@ -159,7 +171,7 @@ const SubNav = ({toggleNavbar}) => {
                   </li>
                   <li>
                     <Link
-                      to="services/ai-ml"
+                      to="services/artificial-intelligence"
                       style={{ alignItems: "center", display: "flex" }}
                       onClick={toggleNavbar}
                     >

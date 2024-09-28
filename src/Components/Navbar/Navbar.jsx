@@ -44,7 +44,7 @@ const Navbar = () => {
             {/* <li>
               TECHNOLOGIES
               <Technologies />
-            </li> */}
+            </li>  */}
             <li>
               INDUSTRIES
               <Industries />
@@ -64,30 +64,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        {/* <div className="com-contacts">
-          <div
-            className="contact"
-            style={{ borderBottom: "1px solid gray", cursor: "pointer" }}
-          >
-            <MdPhone size={27} style={{ marginRight: "10px" }} color={"red"} />
-            <span className="contact-number">IN : +91-90825 82243</span>
-          </div>
-          <div className="contact">
-            <AiOutlineMail
-              size={27}
-              style={{ marginRight: "10px", cursor: "pointer" }}
-              color={"red"}
-            />
-            <span className="contact-email">info@isritechnologies.com</span>
-            <div className="contact hamIcon" onClick={toggleDropdown}>
-              {dropdownNav ? (
-                <AiOutlineClose size={25} />
-              ) : (
-                <GiHamburgerMenu size={25} />
-              )}
-            </div>
-          </div>
-        </div> */}
         <div className="mobile-ham-icon" onClick={toggleDropdown}>
           {dropdownNav ? (
             <AiOutlineClose size={25} className="rotetateclose" />

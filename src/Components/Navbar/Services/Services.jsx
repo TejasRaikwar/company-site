@@ -1,18 +1,14 @@
 import React from "react";
 import {
-  AiFillSetting,
   AiFillCloud,
   AiOutlineMobile,
-  AiOutlineDesktop,
 } from "react-icons/ai";
 import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
-import { FaHandshake } from "react-icons/fa";
-import { BsCart4, BsLaptop, BsFillPeopleFill } from "react-icons/bs";
-import { IoEarthOutline } from "react-icons/io5";
+import { BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { GiArtificialIntelligence } from "react-icons/gi";
-
 import { Link } from "react-router-dom";
+import { TbBrandOffice } from "react-icons/tb";
 
 const Services = () => {
   return (
@@ -44,7 +40,20 @@ const Services = () => {
             </li>
             <li>
               <Link
-                to="services/software-development"
+                to="services/office365"
+                style={{ alignItems: "center", display: "flex" }}
+              >
+                <TbBrandOffice
+                  size={20}
+                  style={{ marginRight: "10px" }}
+                  color="red"
+                />
+                Office 365 Development
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="services/dotnet-development"
                 style={{ alignItems: "center", display: "flex" }}
               >
                 <DiDotnet
@@ -52,12 +61,12 @@ const Services = () => {
                   style={{ marginRight: "10px" }}
                   color="blue"
                 />
-                .Net
+                .Net Development
               </Link>
             </li>
             <li>
               <Link
-                to="services/software-development"
+                to="services/power-platform"
                 style={{ alignItems: "center", display: "flex" }}
               >
                 <SiPowerapps
@@ -114,7 +123,7 @@ const Services = () => {
             </li>
             <li>
               <Link
-                to="services/ai-ml"
+                to="services/artificial-intelligence"
                 style={{ alignItems: "center", display: "flex" }}
               >
                 <GiArtificialIntelligence

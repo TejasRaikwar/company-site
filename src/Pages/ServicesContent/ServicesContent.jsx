@@ -3,7 +3,7 @@ import "./ServicesContent.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
 import useWindowDimensions from "../../Components/Hooks/WindowDimensions/useWindowDimensions";
-import Footer from '../../Components/Footer/Footer'
+import Footer from "../../Components/Footer/Footer";
 import { motion, useAnimation, useInView } from "framer-motion";
 import SplitString from "../../Utils/SplitString";
 
@@ -96,11 +96,9 @@ const ServicesContent = () => {
     }
 
     if (
-      id === "website-development" ||
-      id === "crm-solutions" ||
-      id === "web-design" ||
       id === "hire-developer" ||
-      id === "ai-ml"
+      id === "artificial-intelligence" ||
+      id === "power-platform"
     ) {
       setWhiteColor(true);
     } else {
@@ -273,6 +271,7 @@ const ServicesContent = () => {
             <div className="whychooseus-container" ref={whyUSRef}>
               <div className="whychooseus-subcontainer">
                 <h4 className="service-page-heading pt">Why us ?</h4>
+
                 <div className="whychooseus-rsn-blocks">
                   {whyus.map((key, index) => {
                     return (
@@ -327,6 +326,7 @@ const ServicesContent = () => {
                 <h4 className="service-page-heading" style={headingStyle}>
                   What We Do
                 </h4>
+
                 <div className="whychooseus-rsn-blocks">
                   {whatWeDo.map((key, index) => (
                     <motion.iv
@@ -358,8 +358,7 @@ const ServicesContent = () => {
               </div>
             </div>
             <div>Our Development Works</div>
-            <div>Why ISRI is one of the best IT companies</div>
-            <Footer/>
+            <Footer />
           </div>
         </div>
       ) : (
