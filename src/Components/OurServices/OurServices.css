@@ -35,18 +35,14 @@
     align-items: center;
     margin: 0.5rem 0;
     min-height: fit-content;
-    /* color: #b22929; */
 }
-
-/* .ourservices-heading:hover {
-    color: #1b3f8b;
-    transition: 1s;
-} */
 
 .ourservices-text {
     margin-top: 0.8rem !important;
     font-size: 15px;
     min-height: 110px;
+    max-height: 155px;
+    overflow: scroll;
 }
 
 .ourservices-button {
@@ -89,22 +85,29 @@
 .swiper-button-next {
     right: -14px !important;
 }
-.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
-	color: rgb(84, 84, 84);
-}
-.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after {
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
     color: rgb(84, 84, 84);
 }
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+    color: rgb(84, 84, 84);
+}
+
 @media screen and (max-width:1266px) {
     .ourservices-swiper-container>.swiper .swiper-slide {
         min-height: 420px;
-    } 
-} 
-@media screen and (max-width:1162px) and (min-width:1070px){
+    }
+}
+
+@media screen and (max-width:1162px) and (min-width:1070px) {
     .ourservices-swiper-container>.swiper .swiper-slide {
         min-height: 430px;
-    } 
-} 
+    }
+}
+
 @media screen and (max-width:670px) {
     .ourservices-swiper-container>.swiper {
         width: 90%;

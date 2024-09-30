@@ -1,92 +1,79 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./HeroSlider.css";
-import www from "../../images/www.png";
-import appIcon from "../../images/mobileAppIcon.png";
-import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions";
+import { heroSliderData } from "../../Data/HeroSliderData.js";
+import useWindowDimensions from "../Hooks/WindowDimensions/useWindowDimensions.js";
+// Slick
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// Framer Motion
+import { motion, useInView } from "framer-motion";
 
 const HeroSlider = () => {
-  
-  const [iconSize, setIconSize] = useState(100);
-  const { width } = useWindowDimensions();
+  // Framer
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+    // useEffect(() => {
 
+    // }, [isInView]);
+
+  const { width } = useWindowDimensions();
+  const [isSmall, setIsSmall] = useState(false);
   useEffect(() => {
-    if (width >= 550 && width <= 1390) {
-      setIconSize(80);
-    } else if (width < 550) {
-      setIconSize(60);
+    const headingDivs = document.getElementsByClassName("sd-text");
+
+    if (width <= 456) {
+      setIsSmall(true);
+      for (let i = 0; i < headingDivs.length; i++) {
+        headingDivs[i].classList.add("small-text");
+      }
+    } else {
+      setIsSmall(false);
+      for (let i = 0; i < headingDivs.length; i++) {
+        headingDivs[i].classList.remove("small-text");
+      }
     }
   }, [width]);
 
-  useEffect(() => {
-    let slider = document.querySelector(".slider .list");
-    let items = document.querySelectorAll(".slider .list .item");
-    let lengthItems = items.length - 1;
-    let active = 0;
+  const settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: false,
+    swipeToSlide: true,
+  };
 
-    const next = () => {
-      active = active + 1 <= lengthItems ? active + 1 : 0;
-      reloadSlider();
-    };
-
-    let refreshInterval = setInterval(() => {
-      next();
-    }, 3000);
-
-    function reloadSlider() {
-      slider.style.left = -items[active].offsetLeft + "px";
-      clearInterval(refreshInterval);
-      refreshInterval = setInterval(() => {
-        next();
-      }, 3000);
-    }
-  }, []);
   return (
-    <div className="slider" id="slider">
-      <div className="list" id="list">
-        <div className="item" id="item">
-          <div className="logo-and-text">
-            <img src={www} height={iconSize} alt="" />
-            <div className="sd-text">
-              Responsive Website
-              <br />
-              to Scale Responsible
-              <br />
-              Bussiness
-            </div>
-          </div>
-        </div>
-        <div className="item" id="item">
-          <div className="logo-and-text">
-            <img src={www} height={iconSize} alt="" />
-            <div className="sd-text">
-              Artificial Intelligence <br />
-            </div>
-          </div>
-        </div>
-        <div className="item" id="item">
-          <div className="logo-and-text">
-            <img src={appIcon} height={iconSize} alt="" />
-            <div className="sd-text">
-              Digital Transformation <br />
-              With a Human Touch
-            </div>
-          </div>
-
-        </div>
-        <div className="item" id="item">
-          <div className="logo-and-text">
-            <img src={appIcon} height={iconSize} alt="" />
-            <div className="sd-text">
-              Enterprise
-              <br />
-              Mobile Solutions
-            </div>
-          </div>
-          <p className="share-dev-text">
-            Think Big, Think Different with our Mobile Solutions
-          </p>
-        </div>
-      </div>
+    <div>
+      <Slider {...settings}>
+        {heroSliderData.map((key) => {
+          return (
+            <motion.div
+              ref={ref}
+              key={key}
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.5, delay: 0.25 }}
+            >
+              <div className="hero-carousel-div">
+                {key.logo}
+                {key.heading}
+              </div>
+              <div className="hero-carousel-text">
+                {key.text ? key.text : ""}
+              </div>
+            </motion.div>
+          );
+        })}
+      </Slider>
     </div>
   );
 };

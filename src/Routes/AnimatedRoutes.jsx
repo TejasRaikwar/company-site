@@ -7,9 +7,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import NoPage from "../Pages/NoPage/NoPage";
 import TechnologiesContent from "../Pages/TechnologiesContent/TechnologiesContent";
 import IndustriesContent from "../Pages/IndustriesContent/IndustriesContent";
-import Portfolio from "../Pages/Portfolio/Portfolio";
 import CaseStudy from "../Pages/CaseStudy/CaseStudy";
-import Blog from "../Pages/Blog/Blog";
 
 // FramerMotion
 import { AnimatePresence } from "framer-motion";
@@ -25,9 +23,7 @@ const AnimatedRoutes = () => {
           <Route path="technologies/:id" element={<TechnologiesContent />} />
           <Route path="industries/:id" element={<IndustriesContent />} />
           <Route path="about-us/:id" element={<AboutUs />} />
-          <Route path="portfolio" element={<Portfolio />} />
           <Route path="case-study" element={<CaseStudy />} />
-          <Route path="blog" element={<Blog />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

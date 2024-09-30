@@ -1,4 +1,5 @@
-.right-space{
+.nav-links-items > li:nth-of-type(2):hover .right-space,
+.nav-links-items > li:nth-of-type(3):hover .right-space{
     right: 0.3rem;
 }
 .technologies-container{

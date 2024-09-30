@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="contact-us">
               <div className="con-phone">
-                <CallUS phoneNumber="+91 9876543210" />
+                <CallUS phoneNumber="+91 9082582243" />
               </div>
               <div className="con-email">
                 <MailUS

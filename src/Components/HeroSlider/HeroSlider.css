@@ -1,86 +1,19 @@
-.slider {
-    color: white;
-    max-width: 770px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider .list {
-    position: absolute;
-    width: max-content;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    transition: 1s;
-}
-
-.item {
+.hero-carousel-div{
     height: 100%;
     width: 100%;
 }
-
-.item>img {
-    object-fit: contain;
-}
-
-
-/* 1st Div */
-.logo-and-text {
-    width: 770px;
+.hero-carousel-div{
     display: flex;
     align-items: center;
 }
-
-.sd-text {
-    margin-left: 15px;
+.hero-carousel-text{
     color: white;
-    font-size: 3rem;
 }
-
-.share-dev-text {
-    margin-top: 10px;
-    color: rgb(180, 178, 177);
-    font-weight: 600;
-    font-size: large;
-    text-align: justify;
+.sd-text {
+    margin-left: 20px;
+    color: white;
+    font-size: 2.4rem;
 }
-
-
-@media screen and (max-width: 1390px) and (min-width:550px) {
-    .sd-text {
-        font-size: 2rem;
-    }
-
-    .share-dev-text {
-        height: 80px;
-        width: 80%;
-    }
-
-}
-
-@media screen and (max-width: 690px) and (min-width:550px) {
-    .slider {
-        width: 96vw !important;
-    }
-    .sd-text {
-        font-size: 1.6rem;
-    }
-    .share-dev-text {
-        width: 69%;
-        overflow: auto;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .sd-text {
-        font-size: 2rem;
-    }
-
-    .share-dev-text {
-        height: 80px;
-        width: 94vw;
-        overflow: none;
-    }
+.small-text{
+    font-size: 1.8rem !important;
 }

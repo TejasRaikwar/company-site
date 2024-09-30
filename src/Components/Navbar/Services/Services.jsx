@@ -13,7 +13,7 @@ import { TbBrandOffice } from "react-icons/tb";
 const Services = () => {
   return (
     <div className="dropdown">
-      <div className="dropdown-lvl-1">
+      <div className="dropdown-lvl-1 right-space">
         <div className="services-image">{/* Image */}</div>
         <div className="services-links">
           <div style={{ padding: "10px" }}>

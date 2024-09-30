@@ -54,13 +54,7 @@ const Navbar = () => {
               <AboutUs />
             </li>
             <li>
-              <Link to="portfolio">PORTFOLIO</Link>              
-            </li>
-            <li>
               <Link to="case-study">CASE STUDY</Link>
-            </li>
-            <li>
-              <Link to="blog">BLOG</Link>
             </li>
           </ul>
         </div>

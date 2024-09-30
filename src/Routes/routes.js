@@ -1298,14 +1298,6 @@ const routesConfig = {
       content: [],
     },
     {
-      path: "about-us/partners-and-awards",
-      content: [],
-    },
-    {
-      path: "about-us/client-testimonials",
-      content: [],
-    },
-    {
       path: "about-us/quality-assurance",
       content: [],
     },

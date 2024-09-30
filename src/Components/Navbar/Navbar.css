@@ -11,7 +11,11 @@
   padding: 5px 10px 0 10px;
   border-bottom: 2px solid rgba(159, 157, 157, 0.729);
 }
-
+.nav-links{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
 .nav-links-items {
   display: flex;
   align-items: center;
@@ -35,7 +39,6 @@
 
 .contact {
   display: flex;
-
   align-items: center;
 }
 
