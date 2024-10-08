@@ -1,11 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-
+import { Outlet, useLocation } from "react-router-dom";
+import Navbar from "../Components/Navbar/Navbar";
 
 const Layout = () => {
+  const location = useLocation();
+  const isNav = location.pathname !== "/";
   return (
     <>
       <div className="main-body">
+        {isNav && <Navbar />}
         <Outlet />
       </div>
     </>
@@ -13,7 +16,3 @@ const Layout = () => {
 };
 
 export default Layout;
-
-// <div className="App-Header">
-//   <Navbar />
-// </div>

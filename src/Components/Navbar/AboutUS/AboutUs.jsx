@@ -9,15 +9,9 @@ const AboutUs = ({ toggleNavbar }) => {
     return (
       <div className="dropdown">
         <div className="dropdown-lvl-1 right-space">
-          <div className="aboutus-image">{/* Image */}</div>
+          
           <div className="services-links">
-            <div style={{ padding: "10px" }}>
-              <br />
-              <span className="dropdown-heading">ABOUT US</span>
-              <br />
-              <br />
-              <hr />
-            </div>
+            <br />
             {/* list items */}
             <ul className="services-links-items">
               <li>
@@ -26,22 +20,6 @@ const AboutUs = ({ toggleNavbar }) => {
                   style={{ alignItems: "center", display: "flex" }}
                 >
                   Company
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="about-us/partners-and-awards"
-                  style={{ alignItems: "center", display: "flex" }}
-                >
-                  Partners & Awards
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="about-us/client-testimonials"
-                  style={{ alignItems: "center", display: "flex" }}
-                >
-                  Clients Testimonials
                 </Link>
               </li>
               <li>

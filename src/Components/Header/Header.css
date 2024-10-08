@@ -1,0 +1,21 @@
+.header-inner-contaienr {
+    background-image: url("../../images/hero-wallaper1\ -\ Copy.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.app-header {
+    background-color: red;
+    height: 5rem;
+    z-index: 100;
+    transition: 1s ease-in-out;
+}
+
+.app-header-fixed {
+    background-color: green;
+    position: fixed;
+    width: 100%;
+    transition: 1s ease-in-out;
+}

@@ -8,17 +8,10 @@ const Industries = ({ toggleNavbar }) => {
   if (width >= 830) {
     return (
       <div className="dropdown">
-        <div className="dropdown-lvl-1 right-space">
-          <div className="industries-image">{/* Image */}</div>
+        <div className="dropdown-lvl-1">
           <div className="services-links">
-            <div style={{ padding: "10px" }}>
-              <br />
-              <span className="dropdown-heading">INDUSTRIES</span>
-              <br />
-              <br />
-              <hr />
-            </div>
             {/* list items */}
+            <br />
             <ul className="services-links-items">
               <li>
                 <Link

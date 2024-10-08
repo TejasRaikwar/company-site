@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  AiFillCloud,
-  AiOutlineMobile,
-} from "react-icons/ai";
-import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
+import { AiFillCloud, AiOutlineMobile } from "react-icons/ai";
+import { SiMicrosoftsharepoint, SiPowerapps } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
 import { BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -14,15 +11,9 @@ const Services = () => {
   return (
     <div className="dropdown">
       <div className="dropdown-lvl-1 right-space">
-        <div className="services-image">{/* Image */}</div>
+        
         <div className="services-links">
-          <div style={{ padding: "10px" }}>
-            <br />
-            <span className="dropdown-heading">SERVICES</span>
-            <br />
-            <br />
-            <hr />
-          </div>
+          <br />
           {/* list items */}
           <ul className="services-links-items">
             <li>
