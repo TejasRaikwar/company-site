@@ -9,13 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 // Framer Motion
 import { motion, useInView } from "framer-motion";
 
-const HeroSlider = () => {
+const HeroSlider = ({setBannerImage}) => {
   // Framer
   const ref = useRef(null);
   const isInView = useInView(ref);
-    // useEffect(() => {
-
-    // }, [isInView]);
 
   const { width } = useWindowDimensions();
   const [isSmall, setIsSmall] = useState(false);
@@ -45,6 +42,9 @@ const HeroSlider = () => {
     autoplaySpeed: 3000,
     pauseOnHover: false,
     swipeToSlide: true,
+    beforeChange: (oldIndex, newIndex) => {
+      setBannerImage(heroSliderData[newIndex].background); // Update header background image
+    },
   };
 
   return (

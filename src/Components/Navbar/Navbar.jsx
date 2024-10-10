@@ -58,11 +58,11 @@ const Navbar = () => {
               <Industries />
             </li>
             <li>
-              ABOUT US
-              <AboutUs />
+              <Link to="solutions">SOLUTIONS</Link>
             </li>
             <li>
-              <Link to="case-study">SOLUTIONS</Link>
+              <Link to="about-us">ABOUT US</Link>
+              {/* <AboutUs /> */}
             </li>
           </ul>
         </div>

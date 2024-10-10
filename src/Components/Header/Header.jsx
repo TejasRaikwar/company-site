@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-import Navbar from "../Navbar/Navbar"
-const Header = () => {
+import Navbar from "../Navbar/Navbar";
+import HeroSlider from "../HeroSlider/HeroSlider";
+import { heroSliderData } from "../../Data/HeroSliderData";
+
+const Header = ({}) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [bannerImage, setBannerImage] = useState(heroSliderData[0].background);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
-        setIsScrolled(true); 
+        setIsScrolled(true);
       } else {
         setIsScrolled(false);
       }
@@ -22,8 +26,13 @@ const Header = () => {
   }, []);
   return (
     <div className="header-main-container">
-      <div className="header-inner-contaienr">
-          <Navbar />
+      <div
+        className="header-inner-contaienr" style={{backgroundImage: `url(${bannerImage})`}}
+      >
+        <Navbar />
+        <div className="hero-slider-container">
+          <HeroSlider setBannerImage={setBannerImage}/>
+        </div>
       </div>
     </div>
   );

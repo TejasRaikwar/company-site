@@ -13,37 +13,37 @@ export const WhyChooseUsData = [
     {
         id: 1,
         icon: <FaChartLine size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Customized Business Solutions",
-        description:"Tailored services to meet your unique business needs for seamless integration and growth."
+        heading:"Unparalleled SharePoint Expertise",
+        description:"Our team of certified SharePoint experts has a proven track record of delivering tailored solutions that drive business results."
     },
     {
         id: 2,
         icon: <Ri24HoursFill  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Expert Development Services",
-        description:"Our experienced team delivers innovative, precision-driven solutions for your business."
+        heading:"Innovative Approach",
+        description:"We combine cutting-edge technology with creative problem-solving to deliver innovative SharePoint solutions that exceed expectations."
     },
     {
         id: 3,
         icon: <TbCertificate  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Efficient Collaboration Tools",
-        description:"Boost productivity with solutions designed to enhance teamwork and streamline processes."
+        heading:"Personalized Support",
+        description:"Our dedicated support team provides personalized assistance to ensure seamless integration and optimal performance."
     },
     {
         id: 4,
         icon: <FaRegHandshake   size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Streamlined Document Management",
-        description:"Manage documents efficiently with secure, accessible, and optimized workflows."
+        heading:"Agile Methodology",
+        description:"Our iterative development process ensures rapid delivery, flexibility, and continuous improvement."
     },
     {
         id: 5,
         icon: <GoLaw  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Cutting-Edge Technology",
-        description:"Empowering businesses with scalable, secure solutions to stay ahead in any industry."
+        heading:"Cost-Effective Solutions",
+        description:"We optimize SharePoint investments by streamlining processes, reducing costs, and enhancing productivity."
     },
     {
         id: 6,
         icon: <GiPlayerTime  size={iconSize} color={iconColor} className="rotate-icon"/>,
-        heading:"Seamless System Integration",
-        description:"Integrate systems effortlessly for enhanced efficiency and reduced operational costs."
+        heading:"Proven Track Record",
+        description:"Our success stories speak for themselves - we&#39;ve delivered scalable, secure, and user-friendly SharePoint solutions for diverse industries."
     },
 ]

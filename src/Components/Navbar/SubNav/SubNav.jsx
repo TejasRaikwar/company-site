@@ -86,7 +86,7 @@ const SubNav = ({toggleNavbar}) => {
                         style={{ marginRight: "10px" }}
                         onClick={toggleNavbar}
                       />
-                      .Net Development
+                      ASP .Net Development
                     </Link>
                   </li>
                   <li>

@@ -138,12 +138,16 @@ const ServicesContent = () => {
         paddingLeft: "1rem",
       }
     : {};
-  const reasonBlock = isMobileRoute
-    ? {
-        height: "500px",
-        border: "1px solid black",
-      }
-    : {};
+
+  const reasonBlock = {
+    height:
+        isMobileRoute || (width > 1098 && width <= 1398)
+        ? "500px"
+        : undefined,
+    border: isMobileRoute ? "1px solid black" : undefined,
+    width:
+      width <= 1098 ? "42%" : id === "dotnet-development" ? "22%" : undefined,
+  };
 
   // Framer Motion
   const heroCompRef = useRef();
@@ -324,7 +328,11 @@ const ServicesContent = () => {
             <div className="whychooseus-container" ref={whyChooseUsRef}>
               <div className="whychooseus-subcontainer" style={mobContainer}>
                 <h4 className="service-page-heading" style={headingStyle}>
-                  What We Do
+                  {id === "sharepoint-development" ||
+                  id === "power-platform" ||
+                  id === "dotnet-development"
+                    ? "What We Offer"
+                    : "What We Do ?"}
                 </h4>
 
                 <div className="whychooseus-rsn-blocks">
@@ -357,7 +365,6 @@ const ServicesContent = () => {
                 </div>
               </div>
             </div>
-            <div>Our Development Works</div>
             <Footer />
           </div>
         </div>

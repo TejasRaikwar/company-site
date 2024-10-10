@@ -7,3 +7,32 @@ services:
   <br />
   <hr />
 </div>
+
+
+
+  AboutUs: [
+    {
+      path: "about-us/company",
+      content: [],
+    },
+    {
+      path: "about-us/quality-assurance",
+      content: [],
+    },
+    {
+      path: "about-us/careers",
+      content: [],
+    },
+    {
+      path: "about-us/development-approach",
+      content: [],
+    },
+    {
+      path: "about-us/communication-strategy",
+      content: [],
+    },
+    {
+      path: "about-us/social-responsibility",
+      content: [],
+    },
+  ],

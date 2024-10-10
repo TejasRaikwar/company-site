@@ -147,29 +147,29 @@ const routesConfig = {
         whyUs: [
           {
             icon: <AiOutlineSolution size={iconSize} color={iconColor} />,
-            heading: "SharePoint Consulting",
+            heading: "Unparalleled Expertise",
             reason:
-              "Our expert consultants work with small, medium, and large enterprises to design tailored SharePoint implementation roadmaps. We assess your unique requirements, ensuring a seamless integration that aligns with your business objectives.",
+              "We have Certified SharePoint experts with extensive experience in designing, implementing, and managing SharePoint solutions who stay current with the latest features and best practices.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Custom Development",
+            heading: "Customized Solutions",
             reason:
-              "With over 50 successful custom SharePoint projects, we specialize in developing tailored applications. Our team has a proven track record, including the complete development of an HRIS application on MS SharePoint, utilizing advanced custom coding techniques.",
+              "We provide tailored SharePoint solutions that address unique business needs and goals and ensure seamless integration with existing infrastructure. ",
           },
           {
             icon: (
               <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
             ),
-            heading: "Implementation & Integration",
+            heading: "Proven Track Record",
             reason:
-              "We implement SharePoint solutions on-premises or in the cloud, leveraging years of experience to ensure a successful rollout. Our integration services seamlessly connect SharePoint with third-party applications like SAP, Oracle, and MS Navision, enhancing your existing workflows.",
+              "Our successful projects speak for themselves: [briefly mention a few success stories or statistics]. We deliver results-driven solutions that meet and exceed expectations.",
           },
           {
             icon: <FaProjectDiagram size={iconSize} color={iconColor} />,
-            heading: "Migration Services",
+            heading: " Exceptional Support",
             reason:
-              "Our migration services facilitate smooth transitions from older SharePoint versions (e.g., SP 2007 to SP 2010/2013) and upgrades from SharePoint Foundation to Standard or Enterprise versions. We ensure minimal disruption and maximum return on your existing investments.",
+              "Our dedicated support team provides timely assistance and guidance & we ensure your SharePoint environment is always secure, up-to-date, and running smoothly",
           },
           {
             icon: <GrUserExpert size={iconSize} color={iconColor} />,
@@ -179,9 +179,9 @@ const routesConfig = {
           },
           {
             icon: <Ri24HoursFill size={iconSize} color={iconColor} />,
-            heading: "Solution Audits",
+            heading: "Innovative Approach",
             reason:
-              "We conduct comprehensive audits of your current SharePoint implementation, offering best practices and strategic recommendations. Our objective assessments ensure you maximize your SharePoint investment and achieve optimal performance.",
+              "We leverage the latest SharePoint features and technologies to drive innovation and our solutions enhance collaboration, productivity, and efficiency.",
           },
         ],
         Technologies: [
@@ -207,8 +207,8 @@ const routesConfig = {
         whatWeDo: [
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Flexible Architecture",
-            text: "At ISRI Technologies, we specialize in creating tailored SharePoint architectures that align with your business needs. Whether deploying SharePoint on-premises or in the cloud, we design solutions that ensure scalability and optimal performance for organizations of any size.",
+            heading: "SharePoint Consulting Services",
+            text: "At ISRI Technologies, We ensure to maximize your SharePoint capabilities with expert strategy, governance, and user adoption tailored to your needs. Ensure a smooth transition that enhances productivity and efficiency across your organization.",
             // points: [
             //   "Website development services",
             //   "Mobile apps development services",
@@ -221,28 +221,28 @@ const routesConfig = {
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Content & Search Management",
-            text: "Our development team crafts customized content management solutions that leverage SharePoint's capabilities. We implement advanced search functionalities and metadata management, ensuring that your organization can easily manage and locate critical content while enhancing user efficiency.",
+            heading: "SharePoint Implementation and Migration",
+            text: "We deliver Seamless deployment, migration, and configuration. Expert setup for on-premises, cloud, and hybrid environments. Upgrade from legacy SharePoint versions with minimal downtime.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Enhanced Mobile & User Experience Development",
-            text: "We focus on creating mobile-optimized SharePoint applications that provide a seamless user experience across devices. Our development process includes designing intuitive interfaces and ensuring easy access to documents and resources, empowering your team to work effectively on the go.",
+            heading: "SharePoint Development and Customization",
+            text: "We present tailored tools to simplify work. Automate tasks, add features and connect systems. Expert solutions for your unique business needs",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Bespoke Customization & Application Development",
-            text: "Our developers excel in building custom applications on SharePoint that cater to your specific business requirements. Utilizing industry-standard technologies, we create scalable solutions that integrate seamlessly with existing systems, enhancing functionality without compromising performance.",
+            heading: "SharePoint Support and Maintenance",
+            text: "We extend proactive maintenance for optimal performance. Expert support, updates, and troubleshooting. Ensure business continuity with secure backups and compliance guidance.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Comprehensive Security & Compliance Implementation",
-            text: "We prioritize security in our SharePoint solutions, implementing robust measures tailored to your organization's needs. Our team ensures role-based security configurations and compliance with industry regulations, safeguarding your sensitive information while providing peace of mind.",
+            heading: "SharePoint Collaboration and Productivity Solutions",
+            text: "We Enhance teamwork with customized solutions. Streamline documents, projects, and data analysis. Inform decision-making with actionable insights",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Collaborative Business Intelligence Integration",
-            text: "We empower organizations by integrating business intelligence tools within SharePoint, allowing teams to access and analyze data effectively. Our focus on collaboration fosters a data-driven culture, enabling informed decision-making and enhancing overall productivity.",
+            heading: "SharePoint Integration and Connectivity",
+            text: "We deliver Unify collaboration with Microsoft Teams. Enhance productivity with Power Platform and external system integrations. Connect with third-party services through custom connectors.",
           },
         ],
       },
@@ -279,7 +279,9 @@ const routesConfig = {
               "With numerous successful Office 365 projects, we excel in developing customized applications. Our team has a proven history, including creating a robust HR management system on Office 365.",
           },
           {
-            icon: <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />,
+            icon: (
+              <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
+            ),
             heading: "Implementation & Integration",
             reason:
               "We implement Office 365 solutions either on-premises or in the cloud, leveraging our extensive experience for successful rollouts. Our integration services connect Office 365 with other platforms like Salesforce, Dynamics, and third-party applications.",
@@ -355,13 +357,12 @@ const routesConfig = {
             text: "We empower organizations by integrating powerful business intelligence tools like Power BI into Office 365. This enables your teams to efficiently access, visualize, and analyze data, fostering a data-driven culture that supports informed decision-making and enhances overall productivity.",
           },
         ],
-        
       },
     },
     {
       path: "services/dotnet-development",
       content: {
-        heading: ".Net Development",
+        heading: "ASP .Net Development",
         heroImageLink: "/backgrounds/services/ecommerce-solutions.jpg",
         headPoints: [
           "ASP.NET Website Design and Development",
@@ -378,39 +379,33 @@ const routesConfig = {
         whyUs: [
           {
             icon: <FaCreativeCommonsRemix size={iconSize} color={iconColor} />,
-            heading: "Advanced E-commerce Technology",
+            heading: "Technical Expertise",
             reason:
-              "Our e-commerce solutions feature a user-friendly interface that is easy to navigate, combined with advanced technology such as AR and VR that can help improve the overall customer experience and increase engagement.",
+              "We have Certified .NET developers with proven track records. Expertise in .NET ecosystem and database management. Delivering successful projects with SQL Server, Oracle, and MySQL.",
           },
           {
             icon: <GrUserSettings size={iconSize} color={iconColor} />,
-            heading: "Personalization at Scale",
+            heading: "Innovative Approach",
             reason:
-              "We use AI and machine learning to provide personalized experiences for your customers, at scale. Our e-commerce solutions can help you deliver personalized recommendations, tailored content, and customized promotions, enhancing customer engagement and loyalty.",
+              "We build Agile development for rapid innovation. CI/CD pipeline for quality assurance. DevOps practices for secure, high-performance solutions.",
           },
           {
             icon: <IoExpand size={iconSize} color={iconColor} />,
-            heading: "Scalable and Flexible Architecture",
+            heading: "Customized Solutions",
             reason:
-              "Our e-commerce solutions are built on a scalable and flexible architecture that can handle high traffic volumes and accommodate future growth. We use cloud computing and microservices to ensure that your e-commerce platform is always up-to-date and easily expandable.",
+              "Tailored applications for unique needs. Seamless integration with existing systems. Scalable solutions for growing organizations.",
           },
           {
             icon: <TbSettingsCog size={iconSize} color={iconColor} />,
-            heading: "Multichannel Integration",
+            heading: "Unmatched Support",
             reason:
-              "Our e-commerce solutions can be seamlessly integrated with your social media channels and third-party marketplaces, providing a truly multichannel experience for your customers. Our solutions can help you manage your inventory and sales across multiple channels, improving visibility and control over your entire e-commerce operation.",
+              "Dedicated experts for timely assistance. Regular updates for optimal performance. Proactive monitoring for seamless operations.",
           },
           {
             icon: <RiSecurePaymentFill size={iconSize} color={iconColor} />,
-            heading: "Secure and Reliable Payment Processing",
+            heading: "Proven Track Record",
             reason:
-              "Our e-commerce solutions use the latest encryption and tokenization technologies to ensure secure and reliable payment processing. We support multiple payment options, including mobile payments and digital wallets, providing a seamless checkout experience for your customers.",
-          },
-          {
-            icon: <MdDashboardCustomize size={iconSize} color={iconColor} />,
-            heading: "Intuitive Content Management System",
-            reason:
-              "Our user-friendly content management system manages and updates clients' e-commerce websites effortlessly. We create and publish product listings, promotional banners, blog posts, and other content without any technical expertise.",
+              "Industry-leading expertise. Consistently high client satisfaction. Long-term partnerships with renowned brands.",
           },
         ],
         Technologies: [
@@ -430,33 +425,23 @@ const routesConfig = {
         whatWeDo: [
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Headless Commerce",
-            text: "We offer headless commerce solutions that separate the frontend and backend of your e-commerce platform, allowing you to create customized storefronts and user experiences. We use the latest headless commerce technologies, such as GraphQL, React, and Gatsby, to create fast, responsive, and dynamic e-commerce websites.",
+            heading: "Development Services",
+            text: "We offer custom web application development tailored to your business needs, enhancing user experience and productivity with scalable and secure solutions. Our core development expertise includes high-performance, cross-platform applications (Windows, Linux, macOS) leveraging.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Advanced Analytics",
-            text: "We provide advanced analytics and reporting capabilities to help you understand your customers' behavior and preferences, and make informed business decisions. We use the latest analytics tools, such as Google Analytics, Adobe Analytics, and Mixpanel, to track and analyze your website's performance and customer engagement.",
+            heading: "Consulting Services",
+            text: "Our consulting services include technical assessments and strategic roadmaps to optimize existing applications. We design scalable and secure solutions, leveraging expertise in solution architecture, system integration, database design, cloud architecture, and DevOps consulting.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Multi-channel Sales",
-            text: "We help you sell your products and services across multiple channels, including social media, marketplaces, and mobile apps. We use the latest technologies, such as Facebook Shops, Instagram Shopping, Amazon Marketplace, and Google Shopping, to reach a wider audience and increase your sales.",
+            heading: "Integration Services",
+            text: "Streamline operations with our integration services. We seamlessly connect applications with third-party services and develop secure, scalable RESTful APIs, ensuring efficient data exchange and business growth.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Security and Compliance",
-            text: "We take security and compliance seriously, and our e-commerce solutions are designed to meet the latest security and compliance standards, including PCI DSS, GDPR, and CCPA. We use the latest security technologies, such as SSL/TLS encryption, two-factor authentication, and firewall protection, to keep your customers' data safe and secure.",
-          },
-          {
-            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Custom Integrations",
-            text: "We understand that every e-commerce business is unique, and that's why we offer custom integrations with third-party applications and services, such as payment gateways, shipping providers, and marketing automation tools. We use the latest API technologies and integration platforms to ensure that your e-commerce solution is seamlessly integrated with all your business systems and processes.",
-          },
-          {
-            icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Personalized Customer Experiences",
-            text: "Personalized customer experiences involve tailoring eCommerce platforms and interfaces to meet the unique preferences, behaviors, and needs of individual users. Our e-commerce development services include implementing personalized product recommendations, dynamic pricing strategies, targeted promotions, and customized content delivery mechanisms.",
+            heading: "Support and Maintenance",
+            text: "Enjoy peace of mind with our comprehensive support and maintenance services. We ensure application stability, security, and performance, while our managed services provide expert hosting, infrastructure management, and IT support.",
           },
         ],
       },
@@ -652,41 +637,30 @@ const routesConfig = {
         whyUs: [
           {
             icon: <GrGroup size={iconSize} color={iconColor} />,
-            heading: "Low-Code/No-Code Development",
-            reason:
-              "The Power Platform empowers users to create applications and automate processes without requiring extensive programming knowledge. This accessibility enables both technical and non-technical users to contribute to digital transformation. By simplifying the development process, organizations can rapidly deploy tailored solutions.",
+            heading: " Certified Power Apps Experts",
+            reason: "Proven expertise and certifications.",
           },
           {
             icon: (
               <MdOutlineSettingsSuggest size={iconSize} color={iconColor} />
             ),
-            heading: "Integration with Microsoft Services",
-            reason:
-              "Power Platform seamlessly integrates with other Microsoft products, including Microsoft 365, Azure, and Dynamics 365. This connectivity allows for enhanced data sharing and collaboration across different applications and services. Users can leverage existing Microsoft tools to create a more cohesive and efficient workflow.",
+            heading: "Proven Success Stories",
+            reason: " Real-world examples of successful implementations.",
           },
           {
             icon: <TbTargetArrow size={iconSize} color={iconColor} />,
-            heading: "Data Connectivity",
-            reason:
-              "The platform offers a wide array of connectors that enable users to integrate data from multiple sources, including cloud services, on-premises databases, and third-party applications. This connectivity provides a comprehensive view of organizational data, fostering better insights and informed decision-making. Users can easily pull data from disparate systems to create unified reports and applications.",
+            heading: "Customer-Centric Approach",
+            reason: "Personalized support and guidance.",
           },
           {
             icon: <GrTechnology size={iconSize} color={iconColor} />,
-            heading: "AI and ML Capabilities",
-            reason:
-              "Power Platform includes AI Builder, which allows users to incorporate artificial intelligence and machine learning features into their applications with minimal technical expertise. This capability enables organizations to leverage advanced analytics for improved business insights and automation. Users can create intelligent models for various tasks, enhancing application functionality.",
+            heading: "Agile Methodology",
+            reason: "Rapid development and iteration.",
           },
           {
             icon: <HiMiniPencilSquare size={iconSize} color={iconColor} />,
-            heading: "Real-Time Data Visualization",
-            reason:
-              "Power BI within the Power Platform provides interactive dashboards and reports that visualize data in real time. This feature enables users to quickly analyze trends and performance metrics for informed decision-making. By accessing up-to-date insights, organizations can react swiftly to changing conditions and opportunities.",
-          },
-          {
-            icon: <BiSupport size={iconSize} color={iconColor} />,
-            heading: "Security and Compliance",
-            reason:
-              "The platform ensures robust data protection through role-based access controls, data encryption, and adherence to industry standards and regulations. This focus on security helps organizations safeguard sensitive information while complying with legal requirements. Users can trust that their data is secure within the Power Platform ecosystem.",
+            heading: "Continuous Innovation",
+            reason: "Staying up-to-date with the latest Power Apps features.",
           },
         ],
         Technologies: [
@@ -705,32 +679,32 @@ const routesConfig = {
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
             heading: "Custom Power Apps Development",
-            text: "We specialize in developing custom business applications using Power Apps. Whether it's automating daily tasks, managing customer data, or creating tailored business solutions, we empower your team with low-code tools that foster innovation and boost operational efficiency. Our Power Apps solutions are scalable and integrate seamlessly with other Microsoft services, providing a unified experience.",
+            text: " Our team of experts develops tailored Power Apps solutions to meet your unique business needs",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Power Automate Workflow Automation",
-            text: "We help businesses automate repetitive tasks and streamline workflows with Power Automate. From simple process automation to complex multi-step workflows involving various systems, we build customized solutions that save time and minimize errors. Our expertise ensures seamless integration with your existing tools like Microsoft 365, SharePoint, and Dynamics 365, driving more efficient business operations.",
+            heading: "Power Apps Migration and Upgrade",
+            text: "We migrate your existing applications to Power Apps or upgrade your current Power Apps environment.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Data Analysis and Visualization with Power BI",
-            text: "Our Power BI solutions provide in-depth insights into your data. We design and implement interactive dashboards and reports that allow you to analyze trends, monitor KPIs, and make data-driven decisions. Our team helps you connect to multiple data sources, ensuring that you get a 360-degree view of your business performance, with real-time updates and compelling visuals.",
+            heading: "Power Apps Integration",
+            text: "Integrate Power Apps with SharePoint, Dynamics 365, Office 365, and other third-party APIs.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "AI-Powered Solutions with Power Virtual Agents",
-            text: "Enhance your customer service and internal operations by implementing AI-powered chatbots through Power Virtual Agents. We develop bots that can handle customer inquiries, troubleshoot issues, and perform routine tasks automatically. These bots can be integrated into your existing systems, ensuring smooth interactions and improving user satisfaction without requiring heavy development.",
+            heading: "Power Apps Consulting and Strategy",
+            text: "Our experts provide guidance on Power Apps implementation, best practices, and strategy.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "Seamless Data Management with Dataverse",
-            text: "Dataverse is at the core of efficient data management on the Power Platform. We help you securely store, organize, and manage data from various sources in a centralized location. Whether you need to streamline business data for apps or automate workflows, Dataverse ensures seamless integration with your apps, providing reliable and secure access to information.",
+            heading: "Power Apps Training and Support",
+            text: "We offer comprehensive training and ongoing support to ensure seamless adoption.",
           },
           {
             icon: <GiTeamIdea size={iconSize} color={iconColor} />,
-            heading: "End-to-End Power Platform Consulting",
-            text: "Our consulting services cover the full Power Platform lifecycle, from initial strategy and development to deployment and optimization. We work closely with your team to understand your unique business needs and tailor Power Platform solutions that drive digital transformation. Whether it’s app development, workflow automation, or data analytics, we provide comprehensive guidance to help you unlock the full potential of the platform.",
+            heading: "Power Apps Security and Governance",
+            text: "Ensure data security and compliance with our expert governance and security services.",
           },
         ],
       },
@@ -1292,31 +1266,12 @@ const routesConfig = {
       content: "automotive",
     },
   ],
-  AboutUs: [
-    {
-      path: "about-us/company",
-      content: [],
+  AboutUs: {
+    path: "about-us/company",
+    content: {
+      heading: "We are committed to social responsibility through various programs...",
+      subHeading : "this is sub heading"
     },
-    {
-      path: "about-us/quality-assurance",
-      content: [],
-    },
-    {
-      path: "about-us/careers",
-      content: [],
-    },
-    {
-      path: "about-us/development-approach",
-      content: [],
-    },
-    {
-      path: "about-us/communication-strategy",
-      content: [],
-    },
-    {
-      path: "about-us/social-responsibility",
-      content: [],
-    },
-  ],
+  },
 };
 export default routesConfig;

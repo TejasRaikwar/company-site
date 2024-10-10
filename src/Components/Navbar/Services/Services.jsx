@@ -52,7 +52,7 @@ const Services = () => {
                   style={{ marginRight: "10px" }}
                   color="blue"
                 />
-                .Net Development
+                ASP .Net Development
               </Link>
             </li>
             <li>
