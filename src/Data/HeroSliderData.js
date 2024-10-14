@@ -4,7 +4,7 @@ import ecomLogo from "../images/ecom-logo.png";
 import digTransLogo from "../images/digital-transformation.png";
 import AILogo from "../images/AI-logo.png";
 // banner Images
-import banner1 from "../images/Banners/Itequia-Cómo-gestionar-tus-documentos-en-SharePoint-Online.png";
+import banner1 from "../images/Banners/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg";
 import banner2 from "../images/Banners/background.jpg";
 import banner3 from "../images/Banners/fabio-oyXis2kALVg-unsplash.jpg";
 import banner4 from "../images/Banners/hero-wallaper1.jpg";

@@ -1270,7 +1270,7 @@ const routesConfig = {
     path: "about-us/company",
     content: {
       heading: "We are committed to social responsibility through various programs...",
-      subHeading : "this is sub heading"
+      bannerImage: "/backgrounds/About-us/about-us-banner.jpg",
     },
   },
 };

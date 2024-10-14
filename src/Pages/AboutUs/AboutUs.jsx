@@ -5,11 +5,19 @@ import routesConfig from "../../Routes/routes";
 const AboutUs = () => {
   // const { id } = useParams();
   // const path = `about-us`;
-  const { heading, subHeading } = routesConfig.AboutUs.content;
-  console.log(subHeading);
+  const { heading, subHeading, bannerImage } = routesConfig.AboutUs.content;
+  console.log(bannerImage);
   return (
-    <div>
-      {heading}
+    <div className="about-us-page-main">
+      <div className="about-us-page-inner">
+        <div
+          className="about-us-banner"
+          style={{ backgroundImage: `url(${bannerImage})` }}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus, cupiditate.
+        </div>
+      </div>
     </div>
   );
 };
