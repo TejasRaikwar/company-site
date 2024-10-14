@@ -1269,8 +1269,8 @@ const routesConfig = {
   AboutUs: {
     path: "about-us/company",
     content: {
-      heading: "We are committed to social responsibility through various programs...",
       bannerImage: "/backgrounds/About-us/about-us-banner.jpg",
+      portFolioImg : "/backgrounds/About-us/bussiness-portfolio-img.jpg" ,
     },
   },
 };

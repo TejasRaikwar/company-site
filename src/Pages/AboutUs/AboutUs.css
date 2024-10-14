@@ -1,7 +1,53 @@
-.about-us-banner{
-    /* padding: 10rem 1rem 3rem 1rem; */
+.about-us-banner {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
+}
+
+.about-us-team {
+    width: 100%;
+    display: flex;
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+}
+
+.team-left {
+    width: 60%;
+}
+
+.team-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-right img {
+    width: 100%;
+}
+
+.about-sub-txt {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.about-us-growth {
+    background-color: #9d9d9d;
+    font-size: 18px;
+    padding: 3rem 4rem;
+}
+
+.about-us-bp {
+    padding: 3rem 4rem;
+}
+
+.bussiness-img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bussiness-img img{
+    width: 100%;
+    mix-blend-mode: color;
 }
