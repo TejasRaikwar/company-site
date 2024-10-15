@@ -6,23 +6,10 @@
 }
 
 .footer-inner-container {
-  display: flex;
   padding: 0 3rem;
   box-sizing: border-box;
 }
 
-.footer-left-container {
-  width: 50%;
-}
-
-.footer-right-container {
-  width: 50%;
-}
-
-.footer-right-container iframe {
-  border-radius: 8px;
-  border: none;
-}
 
 .logo-container {
   padding-top: 1em;
@@ -56,10 +43,6 @@
 }
 
 @media screen and (max-width: 576px) {
-  .footer-inner-container {
-    flex-direction: column-reverse;
-  }
-
   .footer-inner-container>div {
     width: 100%;
   }

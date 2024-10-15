@@ -39,12 +39,16 @@ const AboutUs = () => {
             build lasting relationships, and confidently help clients navigate
             complex IT challenges.
           </div>
+
         </div>
         <div className="about-us-bp">
           <div className="service-page-heading">Bussiness Portfolio</div>
           <div className="bussiness-img">
             <img src={portFolioImg} alt="Image" />
           </div>
+        </div>
+        <div className="about-us-core-values">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reiciendis.
         </div>
       </div>
     </div>

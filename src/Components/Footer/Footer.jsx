@@ -28,15 +28,8 @@ const Footer = () => {
         <img src={Logo} alt="ISRI Logo" className="f-isri-logo" height={50} />
       </div>
       <div className="footer-inner-container">
-        <div className="footer-left-container">
           <div className="get-in-touch">
             <div className="heading-g">Get In Touch</div>
-            <div className="get-in-touch-txt">
-              Need more information or have a specific inquiry? We're here to
-              assist you. Feel free to get in touch by phone, email, or our
-              online contact form. We’re committed to providing you with prompt
-              and helpful support
-            </div>
             <div className="contact-us">
               <div className="con-phone">
                 <CallUS phoneNumber="+91 9082582243" />
@@ -50,9 +43,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="footer-right-container">
-        </div>
       </div>
       <div className="bottomSpaceManagerDiv" style={dynamicDisplay}></div>
     </div>

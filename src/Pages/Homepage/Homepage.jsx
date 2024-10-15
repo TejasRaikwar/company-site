@@ -22,7 +22,7 @@ const Homepage = () => {
       <WhoWeAre />
       <WhyChooseUs />
       {/* <OurClients /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* <StickyContactForMobile /> */}
     </motion.div>
   );
