@@ -41,7 +41,6 @@
     justify-content: center; 
     margin-top: 25px;
     row-gap: 0 !important;
-    /* background-color: red; */
 }
 .whychooseus-rsn-block{
     width: 30%;
@@ -55,7 +54,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-family: "Jost";
-    /* text-align: justify; */
 }
 .whychooseus-rsn-block:hover{
     box-shadow: 0px 0px 20px rgba(84, 84,84, 0.526);
@@ -69,12 +67,7 @@
 .rsn-block-text{
     font-size: 17px;
 }
-/*
-.rsn-block-heading:hover {
-    color: #1b3f8b;
-    transition: 1s ease;
-}
-*/
+
 @media screen and (max-width:1200px) {
     .whychooseus-subcontainer{
         padding-left:  1rem;

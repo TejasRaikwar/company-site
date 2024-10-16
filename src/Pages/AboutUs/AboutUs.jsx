@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./AboutUs.css";
 import { useParams } from "react-router-dom";
 import routesConfig from "../../Routes/routes";
+import { OurCoreValues } from "../../Data/OurCoreValues";
+// import { motion, useInView, useAnimation } from "framer-motion";
 const AboutUs = () => {
   // const { id } = useParams();
   // const path = `about-us`;
   const { bannerImage, portFolioImg } = routesConfig.AboutUs.content;
-  console.log(bannerImage);
+
   return (
     <div className="about-us-page-main">
       <div className="about-us-page-inner">
@@ -39,7 +41,6 @@ const AboutUs = () => {
             build lasting relationships, and confidently help clients navigate
             complex IT challenges.
           </div>
-
         </div>
         <div className="about-us-bp">
           <div className="service-page-heading">Bussiness Portfolio</div>
@@ -48,7 +49,26 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="about-us-core-values">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, reiciendis.
+          <div className="service-page-heading" style={{ paddingLeft: "3rem" }}>
+            Our Core Values
+          </div>
+          <div className="values-block-container">
+            <div className="values-blocks">
+              {OurCoreValues.map((key) => {
+                return (
+                  <div className="values-block" key={key.id}>
+                    <div className="rsn-block-icon">{key.icon}</div>
+                    <div className="rsn-block-heading">{key.heading}</div>
+                    <div className="rsn-block-text">{key.description}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="about-us-vm">
+          <div className="our-mission"></div>
+          <div className="our-vision"></div>
         </div>
       </div>
     </div>

@@ -42,7 +42,12 @@
     padding: 3rem 4rem;
 }
 
-.bussiness-img{
+.about-us-core-values {
+    padding: 3rem 1rem;
+    background-color: #9d9d9d;
+}
+
+.bussiness-img {
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -50,7 +55,83 @@
     justify-content: center;
 }
 
-.bussiness-img img{
+.bussiness-img img {
     width: 85%;
     mix-blend-mode: color;
+}
+
+.values-blocks {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    row-gap: 0 !important;
+}
+
+.values-block {
+    width: 22%;
+    height: 260px;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Jost";
+}
+
+.values-block:hover {
+    box-shadow: 0px 0px 20px rgba(84, 84, 84, 0.526);
+}
+
+.about-us-vm{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+.about-us-vm>div{
+    width: 46%;
+    height: 20rem;
+    border-radius: 12px;
+}
+
+.about-us-vm>div:first-of-type{
+    background-image: url("../../images/our-vision.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-us-vm>div:last-of-type{
+    background-image: url("../../images/our-mission.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+@media (max-width:1220px) {
+    .values-block {
+        height: 290px;
+    }
+}
+
+@media (max-width:1125px) {
+    .values-block {
+        height: 310px;
+    }
+}
+
+@media (max-width:1098px) {
+    .values-block {
+        width: 40%;
+        height: 250px;
+    }
 }
