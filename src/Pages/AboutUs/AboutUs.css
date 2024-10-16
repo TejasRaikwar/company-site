@@ -89,30 +89,80 @@
     box-shadow: 0px 0px 20px rgba(84, 84, 84, 0.526);
 }
 
-.about-us-vm{
+.about-us-vm {
     display: flex;
     box-sizing: border-box;
     justify-content: space-evenly;
-    margin: 2rem 0;
+    margin: 6rem 0;
 }
-.about-us-vm>div{
+
+.about-us-vm>div {
     width: 46%;
     height: 20rem;
     border-radius: 12px;
 }
 
-.about-us-vm>div:first-of-type{
+.about-us-vm>div:first-of-type {
     background-image: url("../../images/our-vision.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.about-us-vm>div:last-of-type{
+
+.about-us-vm>div:last-of-type {
     background-image: url("../../images/our-mission.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.inner-trans {
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    width: 46%;
+    height: 20rem;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.vm-content {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    width: 46%;
+    height: 20rem;
+}
+
+.about-heading-vm {
+    color: white;
+    font-size: 2rem;
+}
+
+.vm-text {
+    color: white;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

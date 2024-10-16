@@ -67,8 +67,25 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="about-us-vm">
-          <div className="our-mission"></div>
-          <div className="our-vision"></div>
+          <div className="our-mission">
+            <div className="inner-trans"></div>
+            <div className="vm-content">
+              <div className="about-heading-vm">Our Vision</div>
+              <div className="vm-text">
+                Empowering global clients through technology that amplifies the
+                human spirit.
+              </div>
+            </div>
+          </div>
+          <div className="our-vision">
+            <div className="inner-trans"></div>
+            <div className="vm-content">
+              <div className="about-heading-vm">Our Vision</div>
+              <div className="vm-text">
+              At ISRI Technologies, we are dedicated to empowering businesses to reach their full potential with transformational digital solutions. Our commitment to being a trusted partner and delivering a peace-of-mind customer experience drives our relentless pursuit of excellence. Our team fosters accountability and creativity to drive customer success, facilitated by a supportive workplace culture.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
