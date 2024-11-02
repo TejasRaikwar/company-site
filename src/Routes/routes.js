@@ -3,14 +3,19 @@ import { AiOutlineDeliveredProcedure, AiOutlineSolution } from "react-icons/ai";
 import { GiTeamIdea } from "react-icons/gi";
 import {
   MdOutlineSettingsSuggest,
-  MdDashboardCustomize,
   MdOutlineSecurity,
   MdAppSettingsAlt,
+  MdOutlineAdminPanelSettings,
+  MdManageHistory ,
 } from "react-icons/md";
 import {
   FaProjectDiagram,
   FaCreativeCommonsRemix,
   FaBalanceScaleLeft,
+  FaLaptopCode,
+  FaUserGraduate,
+  FaAward,
+  FaChalkboardTeacher,
 } from "react-icons/fa";
 import {
   GrGroup,
@@ -24,14 +29,25 @@ import {
   RiLayout2Fill,
   RiSecurePaymentFill,
 } from "react-icons/ri";
+
+import { IoMdSchool } from "react-icons/io";
 import { IoExpand } from "react-icons/io5";
 import { TbSettingsCog, TbTargetArrow } from "react-icons/tb";
 import { LiaUserShieldSolid } from "react-icons/lia";
 import { BsPersonFillGear, BsWindowStack } from "react-icons/bs";
-import { LuClipboardCheck } from "react-icons/lu";
+import { LuClipboardCheck, LuHeartHandshake } from "react-icons/lu";
+import { FcCollaboration } from "react-icons/fc";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { BiSolidBookContent,BiCodeBlock } from "react-icons/bi";
+import { HiMiniPencilSquare } from "react-icons/hi2";
+import {
+  FaRegHandshake,
+  FaHospitalUser,
+  FaSchoolCircleCheck,
+  FaLaptopFile ,
 
-// Services
-
+} from "react-icons/fa6";
+import { SiAwssecretsmanager } from "react-icons/si";
 // Technologies Grid Images
 // software development Technologies images
 import img1 from "../images/servicePageTechnologies/software-development-tech/1.png";
@@ -112,16 +128,10 @@ import aiMlImg3 from "../images/servicePageTechnologies/AI-ML/3.png";
 import aiMlImg4 from "../images/servicePageTechnologies/AI-ML/4.png";
 import aiMlImg5 from "../images/servicePageTechnologies/AI-ML/5.png";
 import aiMlImg6 from "../images/servicePageTechnologies/AI-ML/6.png";
-import { FcCollaboration } from "react-icons/fc";
-import { HiOutlineLightBulb } from "react-icons/hi";
-import { BiSolidBookContent, BiSupport } from "react-icons/bi";
-import { HiMiniPencilSquare } from "react-icons/hi2";
-import { FaRegHandshake } from "react-icons/fa6";
 
 // Industries
 
 const iconSize = 55;
-// const iconColor = "rgb(7, 89, 127)";
 const iconColor = "rgb(84,84,84)";
 
 const routesConfig = {
@@ -1179,6 +1189,65 @@ const routesConfig = {
             text: "The number of healthcare applications also keeps expanding along with the mobile sector. Numerous health organizations appeal to us for the development of medical applications for mobile devices as a result of the popularity of reference apps, care planning apps, prescription reminder apps, and facility management solutions on app stores. We have a lot of expertise in developing apps of different levels of complexity and addressing problems. Healthcare mobile app development is important and challenging, and We will offer our services to you.",
           },
         ],
+        benifits: {
+          bheading: "Benefits of Custom Healthcare Software",
+          breasons: [
+            {
+              icon: <FaHospitalUser size={iconSize} color={iconColor} />,
+              bheading: "Personalize Patient Experience",
+              btext:
+                "From streamlined booking systems to mobile healthcare applications, our custom software solutions empower patients to take their health into their own hands.",
+            },
+            {
+              icon: <GrUserSettings size={iconSize} color={iconColor} />,
+              bheading: "Simplify Operations & Processes",
+              btext:
+                "ISRI Technologies helps healthcare clients streamline care and equipment management to give healthcare providers more time to focus on patient care.",
+            },
+            {
+              icon: <LuHeartHandshake size={iconSize} color={iconColor} />,
+              bheading: "Enhance Collaboration",
+              btext:
+                "Our custom software applications enable medical professionals to collaborate effectively from across the hall, across town, and across the globe.",
+            },
+            {
+              icon: (
+                <MdOutlineAdminPanelSettings
+                  size={iconSize}
+                  color={iconColor}
+                />
+              ),
+              bheading: "Ensure Security & Compliance",
+              btext:
+                "Our developers are well-versed in HIPAA compliance and can build custom applications designed to keep your patients’ information secure and confidential.",
+            },
+          ],
+        },
+        ourServices:{
+          heading:"Our Services",
+          services:[
+            {
+              icon:<FaHospitalUser  size={iconSize} color={iconColor}/>,
+              heading:"Patient Care",
+              text:"From making critical information accessible with the swipe of a finger to enhancing access to medical professionals, our clients use our software applications to improve every aspect of the patient experience.",
+            },
+            {
+              icon:<SiAwssecretsmanager  size={iconSize} color={iconColor}/>,
+              heading:"Data Management",
+              text:"Data is the heart of every business, but the stakes are highest when your patients’ health is on the line. Our software solutions help our clients manage data while paying close attention to security and compliance.",
+            },
+            {
+              icon:<MdManageHistory size={iconSize} color={iconColor}/>,
+              heading:"Process Management",
+              text:"ISRI Technologies applications help our healthcare customers streamline internal and external processes to meet patients’ demands for efficiency, transparency, and personalized service.",
+            },
+            {
+              icon:<HiOutlineLightBulb size={iconSize} color={iconColor}/>,
+              heading:"System Modernization",
+              text:"Legacy systems managed on paper and in spreadsheets can no longer efficiently meet today’s healthcare needs. Our healthcare custom software solutions help healthcare companies find their place in the new, digital landscape.",
+            },
+          ]
+        }
       },
     },
     {
@@ -1198,16 +1267,62 @@ const routesConfig = {
               "We collaborate with educational institutions, publishers, and edtech startups to deliver customized and scalable software solutions that enhance learning experiences, streamline administrative tasks, and improve student engagement. We understand that education software development companies play a crucial role in shaping the future of education by harnessing the power of software and digital tools. With a focus on leveraging the latest technologies and industry best practices, our team plays a crucial role in shaping the future of education by harnessing the power of software and digital tools.",
           },
         ],
-        ourSolutions: {
-          heading:
+        benifits: {
+          bheading:
             "Our E-learning and Education Software Development Solutions",
-          subHeading:
-            "Get innovative eLearning web and software solutions. development services Education software development We have developed expertise in creating innovative software solutions for the education sector.",
-          points: [
+          breasons: [
             {
-              icon: "",
-              heading: "",
-              text: "",
+              icon: <BiCodeBlock size={iconSize} color={iconColor} />,
+              bheading: "E-learning Application Development",
+              btext:
+                "We leverage our expertise in technology, instructional design, and user experience to develop e-learning platforms, educational apps, learning management systems, and more. We collaborate with educational institutions, publishers, and edtech startups to deliver customized and scalable software solutions that enhance learning experiences, streamline administrative tasks, and improve student engagement.",
+            },
+            {
+              icon: <FaLaptopFile size={iconSize} color={iconColor} />,
+              bheading: "Learning Management System",
+              btext:
+                "Streamline your educational journey with our intuitive learning management system software, empowering learners, and educators to thrive in a digital era. The growth of e-learning is beneficial for educational institutes as well as leading multinational companies, as it helps train new hires and keeps employees updated with the latest developments within the organization and industry. Our e-learning application development provides seamless integration of AI-powered virtual classrooms and interactive learning modules.",
+            },
+            {
+              icon: <FaChalkboardTeacher size={iconSize} color={iconColor} />,
+              bheading: "E-learning and Education Platforms",
+              btext:
+                "E-learning education platforms revolutionize traditional education methods by offering personalized learning experiences, anytime access to courses, maintaining online learning materials in one place, and comprehensive performance tracking for both students and educators. We provide customised, automated, and cloud-based e-learning development to ensure seamless delivery of services.",
+            },
+            {
+              icon: (
+                <FaSchoolCircleCheck
+                  size={iconSize}
+                  color={iconColor}
+                />
+              ),
+              bheading: "School Management and Student Information Software",
+              btext:
+                "Our school management and student information software streamline administrative tasks, automates attendance tracking, manages academic records, and enables seamless communication between educators, students, and parents. Our comprehensive school management software helps enhance student performance, enable informed decision-making, and centralise critical data for a holistic approach to education.",
+            },
+            {
+              icon: <FaAward size={iconSize} color={iconColor} />,
+              bheading: "Why choose Us for education and SW development?",
+              btext:
+                "Our team specializes in developing robust learning management systems that enable organizations to efficiently manage course content, track student progress, and facilitate collaborative learning environments. Our state-of-the-art e-learning and education platforms empower learners with immersive content, adaptive assessments, and real-time progress tracking, fostering a dynamic and personalized learning experience.",
+            },
+            {
+              icon: <FaUserGraduate size={iconSize} color={iconColor} />,
+              bheading: "Customized e-Learning Services",
+              btext:
+                "Our customized e-learning services are designed to meet your unique requirements, incorporating AI, machine learning, and gamification to enhance engagement and knowledge retention. Our state-of-the-art e-learning and education platforms empower learners with immersive content, adaptive assessments, and real-time progress tracking, fostering a dynamic and personalized learning experience.",
+            },
+            {
+              icon: <FaLaptopCode size={iconSize} color={iconColor} />,
+              bheading: "Agile Development",
+              btext:
+                "Agile development methodologies ensure rapid iterations, frequent communication, and flexibility to adapt to evolving educational needs",
+            },
+            {
+              icon: <IoMdSchool size={iconSize} color={iconColor} />,
+              bheading: "Moodle Services",
+              btext:
+                "Experience comprehensive Moodle services at ISRI Technologies, delivering tailored solutions for your technology-driven e-learning needs. Our offerings encompass installation, configuration, and customization of Moodle, alongside secure hosting, reliable performance, and seamless learning content migration.s",
             },
           ],
         },
@@ -1270,7 +1385,7 @@ const routesConfig = {
     path: "about-us/company",
     content: {
       bannerImage: "/backgrounds/About-us/about-us-banner.jpg",
-      portFolioImg : "/backgrounds/About-us/bussiness-portfolio-img.jpg" ,
+      portFolioImg: "/backgrounds/About-us/bussiness-portfolio-img.jpg",
     },
   },
 };
