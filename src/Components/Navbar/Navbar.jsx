@@ -18,10 +18,17 @@ const Navbar = () => {
   const isHome = location.pathname !== "/";
   const [dropdownNav, setDropdownNav] = useState(false);
   const { width } = useWindowDimensions();
+  const [toggleColor, setToggleColor] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownNav(!dropdownNav);
   };
+
+  const whiteBG = {
+    backgroundColor: dropdownNav ? "white" : "",
+  };
+
+  const iconColor = dropdownNav ? "black" : "white";
 
   useEffect(() => {
     function handleToggleService() {
@@ -33,8 +40,15 @@ const Navbar = () => {
   }, [width]);
 
   return (
-    <div className={`nav-main ${isScrolled ? "nav-fixed" : ''}`}>
-      <nav className={`navbar ${isScrolled ? "navbar-fixed" : ''} ${isHome ? "navbar-fixed" : ''}`}>
+    <div
+      className={`nav-main ${isScrolled ? "nav-fixed" : ""}`}
+      style={whiteBG}
+    >
+      <nav
+        className={`navbar ${isScrolled ? "navbar-fixed" : ""} ${
+          isHome ? "navbar-fixed" : ""
+        }`}
+      >
         <Link to="/">
           <div
             className="com-logo"
@@ -44,7 +58,11 @@ const Navbar = () => {
           </div>
         </Link>
         <div className="nav-links">
-          <ul className={`nav-links-items ${isScrolled ? "scrolled" : ""} ${isHome ? "scrolled" : ""}`}>
+          <ul
+            className={`nav-links-items ${isScrolled ? "scrolled" : ""} ${
+              isHome ? "scrolled" : ""
+            }`}
+          >
             <li>
               SERVICES
               <Services />
@@ -66,11 +84,20 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="mobile-ham-icon" onClick={toggleDropdown}>
+        <div
+          className={`mobile-ham-icon ${
+            isScrolled ? "black-br" : dropdownNav ? "black-br" : "white-br"
+          }`} 
+          onClick={toggleDropdown}
+        >
           {dropdownNav ? (
-            <AiOutlineClose size={25} className="rotetateclose" />
+            <AiOutlineClose
+              size={25}
+              className="rotetateclose"
+              color={iconColor}
+            />
           ) : (
-            <GiHamburgerMenu size={25} />
+            <GiHamburgerMenu size={25} color={isScrolled ? "black" : "white", isHome ? "" : ""} />
           )}
         </div>
       </nav>

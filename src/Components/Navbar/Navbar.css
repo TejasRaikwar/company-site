@@ -247,9 +247,16 @@
 
 .mobile-ham-icon {
   display: none;
-  border: 1px solid black !important;
   padding: 10px;
   border-radius: 8px;
   transition: display 0.3s ease;
   margin-right: 10px;
+}
+
+.white-br {
+  border: 1px solid white !important;
+}
+
+.black-br {
+  border: 1px solid black !important;
 }

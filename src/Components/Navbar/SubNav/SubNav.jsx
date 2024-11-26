@@ -6,10 +6,10 @@ import {
   AiOutlineMobile,
   AiOutlineDesktop,
   AiOutlineMinus,
-  AiOutlinePlus
+  AiOutlinePlus,
 } from "react-icons/ai";
 import { TbBrandOffice } from "react-icons/tb";
-import { SiMicrosoftsharepoint, SiPowerapps  } from "react-icons/si";
+import { SiMicrosoftsharepoint, SiPowerapps } from "react-icons/si";
 import { DiDotnet } from "react-icons/di";
 import { BsLaptop, BsFillPeopleFill } from "react-icons/bs";
 import { GiArtificialIntelligence } from "react-icons/gi";
@@ -18,7 +18,7 @@ import Industries from "../Industries/Industries";
 import Technologies from "../Technologies/Technologies";
 import { Link } from "react-router-dom";
 
-const SubNav = ({toggleNavbar}) => {
+const SubNav = ({ toggleNavbar }) => {
   const [toggleService, setToggleService] = useState(false);
   const [toggleAboutUs, setToggleAboutUs] = useState(false);
   const [toggleIndustries, setToggleIndustries] = useState(false);
@@ -186,7 +186,7 @@ const SubNav = ({toggleNavbar}) => {
               </div>
             ) : null}
           </li>
-          <li>
+          {/* <li>
             <span>
             TECHNOLOGIES
             {toggleTechnologies ? (
@@ -201,7 +201,7 @@ const SubNav = ({toggleNavbar}) => {
             )}
             </span>
             {toggleTechnologies ? <Technologies toggleNavbar={toggleNavbar}/> : null}
-          </li>
+          </li> */}
           <li>
             <span>
               INDUSTRIES
@@ -216,9 +216,11 @@ const SubNav = ({toggleNavbar}) => {
                 />
               )}
             </span>
-              {toggleIndustries ? <Industries toggleNavbar={toggleNavbar}/> : null}
+            {toggleIndustries ? (
+              <Industries toggleNavbar={toggleNavbar} />
+            ) : null}
           </li>
-          <li>
+          {/* <li>
             <span>
               ABOUT US
               {toggleAboutUs ? (
@@ -233,15 +235,12 @@ const SubNav = ({toggleNavbar}) => {
               )}
             </span>
               {toggleAboutUs ? <AboutUs toggleNavbar={toggleNavbar}/> : null}
+          </li> */}
+          <li>
+            <Link to="solutions">SOLUTIONS</Link>
           </li>
           <li>
-            <Link to="portfolio">PORTFOLIO</Link>
-          </li>
-          <li>
-            <Link href="case-study">CASE STUDY</Link>
-          </li>
-          <li>
-            <Link href="blog">BLOCK</Link>
+            <Link to="about-us">ABOUT US</Link>
           </li>
         </ul>
       </div>

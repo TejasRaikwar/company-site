@@ -1385,7 +1385,8 @@ const routesConfig = {
     path: "about-us/company",
     content: {
       bannerImage: "/backgrounds/About-us/about-us-banner.jpg",
-      portFolioImg: "/backgrounds/About-us/bussiness-portfolio-img.jpg",
+      // portFolioImg: "/backgrounds/About-us/bussiness-portfolio-img.jpg",
+      portFolioImg: "/backgrounds/About-us/Untitled-1.jpg",
     },
   },
 };
